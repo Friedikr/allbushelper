@@ -12,7 +12,7 @@ output: distill::distill_article
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-My R Package "allbushelper" containing three functions is a quick start for social scientists working with the ALLBUS dataset. In this case the data needs to be downloaded already before starting the allbushelper load function (ALLBUS data isn’t publicly available via a direct URL). As a social scientist I regularly use the AlLBUS dataset and thought of a straight forward way to make initial steps (like loading, summary, first plot) easier. Maybe that will convince more Sociology Students work with R instead of STATA. 
+My R Package "allbushelper" containing three functions is a quick start for social scientists working with the ALLBUS dataset. In this case the data needs to be downloaded already before starting the allbushelper load function (ALLBUS data isn’t publicly available via a direct URL). As a social scientist I regularly use the ALLBUS dataset and thought of a straight forward way to make initial steps (like loading, summary, first plot) easier. Maybe that will convince more Sociology Students work with R instead of STATA. 
 
 My package can be found on a public github repository: https://github.com/Friedikr/allbushelper.
 
@@ -40,6 +40,9 @@ plot_eastwest(data)
 ## Submission: install package from github
 ```{r}
 # install.packages("remotes")
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+getOption("repos")
+install.packages(c("dplyr", "haven", "ggplot2"), repos = "https://cloud.r-project.org")
 remotes::install_github("Friedikr/allbushelper")
 ```
 
