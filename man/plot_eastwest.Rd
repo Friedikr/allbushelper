@@ -16,8 +16,5 @@ plot_eastwest(data, var = "eastwest")
 \description{
 Plottet die Häufigkeit der East/West Variable (1 = East, 2 = West).
 
-Plot East/West Verteilung
-}
-\details{
 Plottet die Häufigkeit der East/West Variable (1 = Ost, 2 = West).
 }

@@ -1,7 +1,5 @@
 #' Plot East/West Verteilung
 #'
-#' Plot East/West Verteilung
-#'
 #' Plottet die Häufigkeit der East/West Variable (1 = Ost, 2 = West).
 #'
 #' @param data Ein Dataframe (ALLBUS Datensatz)

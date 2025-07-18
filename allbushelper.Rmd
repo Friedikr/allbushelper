@@ -43,6 +43,7 @@ plot_eastwest(data)
 options(repos = c(CRAN = "https://cloud.r-project.org"))
 getOption("repos")
 install.packages(c("dplyr", "haven", "ggplot2"), repos = "https://cloud.r-project.org")
+
 remotes::install_github("Friedikr/allbushelper")
 ```
 
