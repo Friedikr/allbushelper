@@ -1,0 +1,17 @@
+Package: allbushelper
+Type: Package
+Title: Allbus in R
+Version: 0.1.0
+Author: Frieda Krois
+Maintainer: Frieda Krois <f.krois@campus.lmu.de>
+Description: Lädt den ALLBUS-Datensatz und zeigt eine Übersicht der Datenstruktur.
+License: MIT
+Imports: 
+    haven,
+    dplyr,
+    tibble,
+    ggplot2,
+    purrr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2

@@ -1,0 +1,35 @@
+---
+title: "My first R package "allbushelper""
+author: "Frieda Krois"
+date: "2025-07-18"
+output: 
+  distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My R Package "allbushelper" containing three functions is a quick start for social scientists working with the ALLBUS dataset. In this case the data needs to be downloaded already before starting the allbushelper load function (ALLBUS data isn’t publicly available via a direct URL). As a social scientist I regularly use the AlLBUS dataset and thought of a straight forward way to make initial steps (like loading, summary, first plot) easier. Maybe that will convince more Sociology Students work with R instead of STATA. 
+
+
+## load my newly created r package to use following functions
+```{r}
+library(allbushelper)
+```
+
+## load ALLBUS (needs to be downloaded from the gesis website first!)
+```{r}
+data <- load_allbus("data/ZA8831_v1-2-0.dta")
+```
+
+## get a summary of the ALLBUS data
+```{r}
+summary_allbus(data)
+```
+
+## get a first insight of ALLBUS by plotting the eastwest variable 
+```{r}
+plot_eastwest(data)
+```
+
