@@ -2,7 +2,7 @@
 ---
 title: "Exercise #6"
 subtitle: "Fortgeschrittene Statistische Software für NF"
-author: "Frieda Krois ()"
+author: "Frieda Krois (12745035)"
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
@@ -40,10 +40,5 @@ plot_eastwest(data)
 
 ## Submission: install package from github
 ```{r}
-# install.packages("remotes")
-options(repos = c(CRAN = "https://cloud.r-project.org"))
-getOption("repos")
-install.packages(c("dplyr", "haven", "ggplot2"), repos = "https://cloud.r-project.org")
-remotes::install_github("Friedikr/allbushelper") # ERROR: lazy loading failed for package ‘allbushelper’: I tried to fix it but did not work out.
-```
-
+# getOption("repos") # specify the CRAN-Server
+remotes::install_github("Friedikr/allbushelper") 
