@@ -25,12 +25,12 @@ library(allbushelper)
 
 ## load ALLBUS (needs to be downloaded from the gesis website first!)
 ```{r}
-data <- load_allbus("data/ZA8831_v1-2-0.dta")
+data <- load_allbus("ZA8831_v1-2-0.dta") # data has 5246 rows and 579 columns
 ```
 
-## get a summary of the ALLBUS data
+## The dataset is big. Let's get a summary of the ALLBUS data for a better overview.
 ```{r}
-summary_allbus(data)
+summary_allbus(data)  # data has 5246 rows and 579 columns
 ```
 
 ## get a first insight of ALLBUS by plotting the eastwest variable 
